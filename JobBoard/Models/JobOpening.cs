@@ -35,7 +35,7 @@ namespace JobBoard.Models
 
     public string GetName()
     {
-      return _address;
+      return _name;
     }
 
     public string GetAddress()
@@ -51,6 +51,31 @@ namespace JobBoard.Models
     public static List<JobOpening> GetAll()
     {
       return _openings;
+    }
+
+    public void SetTitle(string newTitle)
+    {
+      _title = newTitle;
+    }
+
+    public void SetDescription(string newDescription)
+    {
+      _description = newDescription;
+    }
+
+    public void SetName(string newName)
+    {
+      _name = newName;
+    }
+
+    public void SetAddress(string newAddress)
+    {
+      _address = newAddress;
+    }
+
+    public void SetPhone(string newPhone)
+    {
+      _phone = newPhone;
     }
 
 
